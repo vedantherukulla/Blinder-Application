@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">AcrProject</string>
+    <string-array name="Female_Profiles">
+        <item>kajal</item>
+        <item>kristianstewart</item>
+        <item>anushka</item>
+        <item>billiellish</item>
+        <item>poojahegde</item>
+        <item>dualipa</item>
+        <item>nayantara</item>
+        <item>selena</item>
+        <item>emmawatson</item>
+        <item>jenniferlawrence</item>
+    </string-array>
+
+    <string-array name="Description">
+        <item>Age:34, Status:Single,
+            Lives in:Montreal</item>
+        <item>Age:29, Status:Single,
+            Lives in: Montreal</item>
+        <item>Age:35, Status:Single,
+            Lives in: Toronto</item>
+        <item>Age:18,Status:Single,
+            Lives in: Quebec City</item>
+        <item>Age:27, Status:Single,
+            Lives in: Brossard</item>
+        <item>Age:24, Status:Single,
+             Lives in:Laval</item>
+        <item>Age:27, Status:Single,
+            Lives in: Montreal Downtown</item>
+        <item>Age:27, Status:Single,
+            Lives in: Sherbrooke</item>
+        <item>Age:29, Status:Single,
+            Lives in: Quebec City</item>
+        <item>Age:29, Status:Single,
+            Lives in: Montreal</item>
+    </string-array>
+
+    <string-array name="Male_Profiles">
+        <item>ranbirkapoor</item>
+        <item>karthikaaryan</item>
+        <item>martingarrix</item>
+        <item>ntr</item>
+        <item>prabhas</item>
+        <item>calvinharris</item>
+        <item>edsheeran</item>
+        <item>drake</item>
+        <item>postmalone</item>
+        <item>dylanminnette</item>
+    </string-array>
+    <string-array name="Male_Description">
+        <item>Age:29, Status:Single,
+            Lives in:Montreal</item>
+        <item>Age:29, Status:Single,
+            Lives in: Montreal</item>
+        <item>Age:23, Status:Single,
+            Lives in: Toronto</item>
+        <item>Age:30, Status:Single,
+            Lives in: Quebec City</item>
+        <item>Age:35, Status:Single,
+            Lives in: Brossard</item>
+        <item>Age:36, Status:Single,
+             Lives in:Laval</item>
+        <item>Age:25, Status:Single,
+            Lives in: Montreal Downtown</item>
+        <item>Age:29, Status:Single,
+            Lives in: Sherbrooke</item>
+        <item>Age:22, Status:Single,
+            Lives in: Quebec City</item>
+        <item>Age:21, Status:Single,
+            Lives in: Montreal</item>
+    </string-array>
+
+</resources>

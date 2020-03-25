@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MovieActivity">
+
+    <ImageView
+        android:id="@+id/img_jp"
+        android:layout_width="98dp"
+        android:layout_height="186dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.185"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bms"
+        app:layout_constraintVertical_bias="0.862"
+        app:srcCompat="@drawable/jurrasicpark" />
+
+    <ImageView
+        android:id="@+id/img_avengers"
+        android:layout_width="151dp"
+        android:layout_height="144dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bms"
+        app:layout_constraintVertical_bias="0.375"
+        app:srcCompat="@drawable/avengers" />
+
+    <ImageView
+        android:id="@+id/bms"
+        android:layout_width="396dp"
+        android:layout_height="116dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/bookmyshow" />
+
+    <TextView
+        android:id="@+id/mvemsg"
+        android:layout_width="333dp"
+        android:layout_height="37dp"
+        android:text="Movies showing in nearby theaters"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.961"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bms"
+        app:layout_constraintVertical_bias="0.062" />
+
+    <TextView
+        android:id="@+id/txt_avengers"
+        android:layout_width="125dp"
+        android:layout_height="42dp"
+        android:text="Avengers Endgame"
+
+        android:textColor="#A00012"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toEndOf="@+id/img_avengers"
+        app:layout_constraintTop_toTopOf="@+id/mvemsg"
+        app:layout_constraintVertical_bias="0.337" />
+
+    <TextView
+        android:id="@+id/text_jp"
+        android:layout_width="125dp"
+        android:layout_height="42dp"
+        android:text="Jurassic Park"
+        android:textColor="#A00012"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.276"
+        app:layout_constraintStart_toEndOf="@+id/img_jp"
+        app:layout_constraintTop_toBottomOf="@+id/txt_avengers"
+        app:layout_constraintVertical_bias="0.445" />
+
+    <Button
+        android:id="@+id/btn_avgrs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3:00pm"
+        android:textColor="#A00012"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.594"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bms"
+        app:layout_constraintVertical_bias="0.469" />
+
+    <Button
+        android:id="@+id/btn_jp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6:00pm"
+        android:textColor="#A00012"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.594"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bms"
+        app:layout_constraintVertical_bias="0.777" />
+
+    <Button
+        android:id="@+id/datebtn"
+        android:layout_width="130dp"
+        android:layout_height="53dp"
+        android:text="Select a date"
+        android:textColor="#A00012"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bms"
+        app:layout_constraintVertical_bias="0.161" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
