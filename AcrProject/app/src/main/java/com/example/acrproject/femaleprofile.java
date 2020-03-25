@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 public class femaleprofile extends AppCompatActivity {
     ImageView fclcickimage;
-    TextView fprotitle,fprodesc;
+    TextView fprotitle,fprodesc,fmore;
     Button selectbtn;
 
     String data1,data2;
@@ -25,6 +25,7 @@ public class femaleprofile extends AppCompatActivity {
         fprotitle=findViewById(R.id.fprotitle);
         fprodesc=findViewById(R.id.fprofdesc);
         selectbtn=findViewById(R.id.selectbtn);
+        fmore=findViewById(R.id.txt_more);
         getData();
         setData();
         selectbtn.setOnClickListener(new View.OnClickListener() {
@@ -32,6 +33,12 @@ public class femaleprofile extends AppCompatActivity {
             public void onClick(View v) {
                 Intent btnint=new Intent(femaleprofile.this,MovieActivity.class);
                 startActivity(btnint);
+            }
+        });
+        fmore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(femaleprofile.this, "You've all caught up", Toast.LENGTH_SHORT).show();
             }
         });
     }

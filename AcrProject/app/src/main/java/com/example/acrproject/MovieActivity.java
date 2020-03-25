@@ -38,6 +38,7 @@ public class MovieActivity extends AppCompatActivity {
         mdate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                     Calendar calender = Calendar.getInstance();
                     int year = calender.get(Calendar.YEAR);
                     int month = calender.get(Calendar.MONTH);
@@ -47,7 +48,8 @@ public class MovieActivity extends AppCompatActivity {
                             mDateSetListener, year, month, day);
                     dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.BLACK));
                     dialog.show();
-            }
+                }
+
         });
 
         mDateSetListener = new DatePickerDialog.OnDateSetListener() {
@@ -57,6 +59,7 @@ public class MovieActivity extends AppCompatActivity {
                     month = month + 1;
                     String date = month + "/" + day + "/" + year;
                     mdate.setText(date);
+
             }
         };
 
