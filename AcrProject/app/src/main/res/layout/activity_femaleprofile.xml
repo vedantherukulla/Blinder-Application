@@ -51,6 +51,7 @@
         android:background="#F8F00202"
         android:text="SELECT AND CONTINUE TO MOVIE BOOKING"
         android:textColor="#F1F1F3"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -62,6 +63,7 @@
         android:layout_width="82dp"
         android:layout_height="39dp"
         android:text="More"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

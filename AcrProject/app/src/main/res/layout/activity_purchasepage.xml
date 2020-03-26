@@ -1,126 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Purchasepage">
 
-    <TextView
-        android:id="@+id/no_seats"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Please Enter No of Seats :"
-        android:textColor="#1A1919"
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="278dp"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:hint="Please enter no of seats"
+        android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.217"
+        app:layout_constraintHorizontal_bias="0.263"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.148" />
+        app:layout_constraintVertical_bias="0.062" />
 
     <TextView
-        android:id="@+id/price_tkt"
-        android:layout_width="64dp"
-        android:layout_height="26dp"
-        android:text="Subtotal :"
-        android:textColor="#1A1919"
+        android:id="@+id/textView10"
+        android:layout_width="360dp"
+        android:layout_height="52dp"
+        android:gravity="center"
+        android:text="SubTotal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintHorizontal_bias="0.686"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.221" />
+        app:layout_constraintVertical_bias="0.269" />
 
     <TextView
-        android:id="@+id/price_totl"
-        android:layout_width="64dp"
-        android:layout_height="26dp"
-        android:text="Total :"
-        android:textColor="#1A1919"
+        android:id="@+id/textView2"
+        android:layout_width="360dp"
+        android:layout_height="52dp"
+        android:gravity="center"
+        android:text="Tax"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintHorizontal_bias="0.686"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.33" />
+        app:layout_constraintVertical_bias="0.377" />
 
     <TextView
-        android:id="@+id/tax_no"
-        android:layout_width="66dp"
-        android:layout_height="25dp"
-        android:text="Tax :"
-        android:textColor="#1A1919"
+        android:id="@+id/textView3"
+        android:layout_width="360dp"
+        android:layout_height="52dp"
+        android:gravity="center"
+        android:text="Total Price"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintHorizontal_bias="0.686"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.273" />
+        app:layout_constraintVertical_bias="0.484" />
 
     <Button
-        android:id="@+id/btn_prchse"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_width="300dp"
+        android:layout_height="53dp"
+        android:background="#F8F00202"
+        android:text="Enter"
+        android:textColor="#F1F1F3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.315"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.175" />
+
+    <Button
+        android:id="@+id/btn_cnfm"
+        android:layout_width="300dp"
+        android:layout_height="53dp"
         android:text="Confirm Purchase"
-        android:textColor="#A00012"
+        android:textColor="#F1F1F3"
+        android:background="#F8F00202"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.315"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.424" />
-
-    <TextView
-        android:id="@+id/ttlseats"
-        android:layout_width="62dp"
-        android:layout_height="23dp"
-        android:text="2"
-        android:textColor="#1A1919"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.676"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.149" />
-
-    <TextView
-        android:id="@+id/ttl_sub"
-        android:layout_width="79dp"
-        android:layout_height="36dp"
-        android:text="40 (2*$20)"
-        android:textColor="#1A1919"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.71"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.224" />
-
-    <TextView
-        android:id="@+id/ttl_tax"
-        android:layout_width="62dp"
-        android:layout_height="23dp"
-        android:text="6"
-        android:textColor="#1A1919"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.676"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.272" />
-
-    <TextView
-        android:id="@+id/ttl_amnt"
-        android:layout_width="62dp"
-        android:layout_height="23dp"
-        android:text="$46"
-        android:textColor="#1A1919"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.676"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.329" />
-
+        app:layout_constraintVertical_bias="0.62" />
 </androidx.constraintlayout.widget.ConstraintLayout>

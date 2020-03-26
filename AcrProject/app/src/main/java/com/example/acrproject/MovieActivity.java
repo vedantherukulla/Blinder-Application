@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Calendar;
 
@@ -39,16 +40,16 @@ public class MovieActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                    Calendar calender = Calendar.getInstance();
-                    int year = calender.get(Calendar.YEAR);
-                    int month = calender.get(Calendar.MONTH);
-                    int day = calender.get(Calendar.DAY_OF_MONTH);
-                    DatePickerDialog dialog = new DatePickerDialog(MovieActivity.this,
-                            android.R.style.Theme_Holo_Light_Dialog_MinWidth,
-                            mDateSetListener, year, month, day);
-                    dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.BLACK));
-                    dialog.show();
-                }
+                Calendar calender = Calendar.getInstance();
+                int year = calender.get(Calendar.YEAR);
+                int month = calender.get(Calendar.MONTH);
+                int day = calender.get(Calendar.DAY_OF_MONTH);
+                DatePickerDialog dialog = new DatePickerDialog(MovieActivity.this,
+                        android.R.style.Theme_Holo_Light_Dialog_MinWidth,
+                        mDateSetListener, year, month, day);
+                dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.BLACK));
+                dialog.show();
+            }
 
         });
 
@@ -56,9 +57,9 @@ public class MovieActivity extends AppCompatActivity {
             @Override
 
             public void onDateSet(DatePicker view, int year, int month, int day) {
-                    month = month + 1;
-                    String date = month + "/" + day + "/" + year;
-                    mdate.setText(date);
+                month = month + 1;
+                String date = month + "/" + day + "/" + year;
+                mdate.setText(date);
 
             }
         };
@@ -66,22 +67,30 @@ public class MovieActivity extends AppCompatActivity {
         avgrsbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                String verify = mdate.getText().toString();
+                if (verify.isEmpty()) {
+                    mdate.setError("please choose a date");
+                    mdate.requestFocus();
+                } else {
                     Intent avgbtn = new Intent(MovieActivity.this, Purchasepage.class);
                     startActivity(avgbtn);
 
+                }
             }
 
         });
         jpbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                Intent jsp=new Intent(MovieActivity.this,Purchasepage.class);
-                startActivity(jsp);
+                String datec = mdate.getText().toString();
+                if (datec.isEmpty()) {
+                    Toast.makeText(MovieActivity.this,"select date cannot be empty",Toast.LENGTH_LONG).show();
+                    mdate.requestFocus();
+                } else {
+                    Intent jsp = new Intent(MovieActivity.this, Purchasepage.class);
+                    startActivity(jsp);
+                }
             }
         });
-
-
     }
 }
